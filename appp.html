@@ -1,11 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<title>Swiggy Clone</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background-color: #fc8019;
+    color: white;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+}
+
+.signin {
+    background: black;
+    border: none;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #fc8019;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    line-height: 1.4;
+}
+
+/* Search Bar */
+.search-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-box {
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+    border: none;
+}
+
+.search-btn {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    background-color: #fc8019;
+}
+
+.card {
+    background: #f5f5f5;
+    width: 250px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card h2 {
+    margin: 10px 0;
+}
+
+.offer {
+    color: #fc8019;
+    font-weight: bold;
+}
+</style>
+
 </head>
+
 <body>
-    
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo">Swiggy</div>
+
+    <div class="nav-links">
+        <a href="#">Swiggy Corporate</a>
+        <a href="#">Partner with us</a>
+        <a href="#" class="btn">Get the App</a>
+        <a href="#" class="btn signin">Sign in</a>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<div class="hero">
+    <h1>Order food & groceries. Discover best restaurants. Swiggy it!</h1>
+
+    <div class="search-container">
+        <input class="search-box" type="text" placeholder="Enter your delivery location">
+        <input class="search-box" type="text" placeholder="Search for restaurant, item or more">
+        <button class="search-btn">Search</button>
+    </div>
+</div>
+
+<!-- Cards -->
+<div class="cards">
+
+    <div class="card">
+        <h2>FOOD DELIVERY</h2>
+        <p>FROM RESTAURANTS</p>
+        <p class="offer">UPTO 60% OFF</p>
+    </div>
+
+    <div class="card">
+        <h2>INSTAMART</h2>
+        <p>INSTANT GROCERY</p>
+        <p class="offer">UPTO 60% OFF</p>
+    </div>
+
+    <div class="card">
+        <h2>DINEOUT</h2>
+        <p>EAT OUT & SAVE MORE</p>
+        <p class="offer">UPTO 50% OFF</p>
+    </div>
+
+</div>
+
 </body>
 </html>
